@@ -21,7 +21,7 @@ socket.on("new round", (data) => {
   renderScores(data.scores);
 });
 socket.on("round result", (data) => {
-  answerChat.textContent = `🏆 ${data.winner}   جاوب  `;
+  answerChat.textContent = `✔️  ${data.winner}    جاوب  `;
   renderScores(data.scores);
 });
 socket.on("state", (data) => {
